@@ -5,7 +5,7 @@ export default function Footer() {
         <footer>
             <div>
                 <p>
-                    <span class="material-symbols-outlined">
+                    <span className="material-symbols-outlined">
                         copyright
                     </span>2022 #VANLIFE
                 </p>
