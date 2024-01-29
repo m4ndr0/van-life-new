@@ -6,11 +6,13 @@ export default function Header() {
     return (
         <>
             <header>
-                <div>
-                    <p className="logo">#VANLIFE</p>
-                    <Link className='nav--link' to="/">Home</Link>
+                <nav>
+                    <div>
+                        <Link className='logo' to="/">#VANLIFE</Link>
+                    </div>
+                    <Link className='nav--link' to="/About">About</Link>
                     <Link className='nav--link vans--link' to="/Vans">Vans</Link>
-                </div>
+                </nav>
             </header>
         </>
     )
