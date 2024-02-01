@@ -2,7 +2,6 @@
   margin: auto;
 }
 
-
 /*Header component CSS*/
 header {
   width: 100vw;
@@ -101,6 +100,7 @@ main > div {
 
 footer {
   width: 100vw;
+  margin: 0;
 }
 
 footer > div {
@@ -141,6 +141,7 @@ footer > div > p{
 }
 
 .about--page--subcontainer > p {
+  margin-left: 0;
   font-size: 1rem;
   line-height: 1.5rem;
   letter-spacing: 0.03rem;
@@ -172,7 +173,205 @@ footer > div > p{
 
 .vans--page--container {
   background-color: beige;
-  padding: 1px 0;
+  padding: 1px;
+}
+
+.van--elements--container {
+  width: 100%;
+  padding: 20%;
+  padding-bottom: 0;
+}
+
+.vans--elemets--img {
+  width: 100%;
+  border-radius: 5px;
+}
+
+.vans--grid--container {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: 30% 30% 30%;
+  gap: 1% 4%;
+  align-items: center;
+}
+
+.vans--info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  font-weight: bold;
+}
+
+.vans--info > h3 {
+  margin-top: 0;
+}
+
+.day--text {
+  font-size: 0.6rem;
+}
+
+.van--type {
+  display: flex;
+  width: fit-content;
+  justify-content: start;
+  color: white;
+  letter-spacing: 0.05rem;
+  font-weight: bolder;
+  font-size: 0.6rem;
+  padding: 3px 5px;
+  border-radius: 5px;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+}
+
+.luxury {
+  background-color: rgb(45, 45, 45);
+}
+
+.simple {
+  background-color: rgb(252, 146, 60);
+}
+
+.rugged {
+  background-color: rgb(27, 103, 27);
+}
+
+.link--to--vandetails, .link--back--to--vans {
+  text-decoration: none;
+  color: black;
+}
+
+/*Van details page CSS /////////////////////////////////////////////*/
+
+.van--details--page--global--container {
+  background-color: beige;
+
+}
+
+.van--details--page--container {
+  padding: 5%;
+  display: flex;
+  max-width: 900px;
+  margin: auto;
+}
+
+.van--details--page > .van--type, .link--back--to--vans {
+  margin-left: 5%;
+}
+
+.van--details--page {
+  margin-bottom: 0;
+}
+
+.van--details--page > h1, p {
+  width: fit-content;
+  margin-left: 5%;
+}
+
+.van--details--page--name {
+  width: fit-content;
+  margin-left: 5%;
+  margin-bottom: 0;
+}
+.van--details--page > p {
+  margin-left: 6%;
+}
+
+.van--details--page--description {
+  text-align: left;
+  max-width: 90%;
+}
+
+.link--back--to--vans {
+  display: flex;
+  width: fit-content;
+  font-size: 1.1rem;
+}
+
+.link--back--to--vans:hover {
+  color: rgb(128, 128, 128);
+  text-decoration: underline;
+}
+
+.van--details--page--image {
+  width: 90%;
+  border-radius: 5px;
+  margin: 10px 0;
+}
+
+.van--details--page--price {
+  font-weight: bold;
+}
+
+.rent--van--button {
+  display: flex;
+  width: 90%;
+  margin: auto;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  border-radius: 5px;
+  border: none;
+  font-family: 'Lato', sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  color: white;
+  background-color: rgb(255, 158, 78);
+  letter-spacing: 0.03rem;
+  cursor: pointer;
+}
+
+
+
+@media (min-width: 450px) {
+
+  .vans--info {
+    font-size: 0.85rem;
+  }
+
+  .day--text {
+    font-size: 0.65rem;
+  }
+
+  .van--type {
+    font-size: 0.7rem;
+  }
+
+  .link--back--to--vans {
+    font-size: 1.4rem;
+  }
+
+  .van--details--page--description {
+    font-size: 1.4rem;
+  }
+
+  .rent--van--button {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 600px) {
+  .vans--info {
+    font-size: 0.95rem;
+  }
+  .day--text {
+    font-size: 0.75rem;
+  }
+  .van--type {
+    font-size: 0.8rem;
+  }
+  .link--back--to--vans {
+    font-size: 1.5rem;
+  }
+
+  .van--details--page--description {
+    font-size: 1.5rem;
+  }
+
+  .rent--van--button {
+    font-size: 1.4rem;
+  }
 }
 
 @media (min-width: 900px){
@@ -220,5 +419,55 @@ footer > div > p{
     font-size: 1rem;
   }
 
+
+  .vans--info {
+    font-size: 1.1rem;
+  }
+  .day--text {
+    font-size: 0.95rem;
+  }
+  .van--type {
+    font-size: 0.95rem;
+  }
+
+  .link--back--to--vans {
+    font-size: 1.6rem;
+  }
+
+  .van--details--page--description {
+    font-size: 1.6rem;
+  }
+
+  .rent--van--button {
+    font-size: 1.6rem;
+  }
+
+  .vans--grid--container {
+    gap: 1% 2%;
+  }
+  
+
 }
 
+@media (min-width: 950px) {
+  .vans--info {
+    font-size: 1.2rem;
+  }
+  .day--text {
+    font-size: 0.98rem;
+  }
+  .van--type {
+    font-size: 1rem;
+  }
+  .link--back--to--vans {
+    font-size: 1.7rem;
+  }
+
+  .van--details--page--description {
+    font-size: 1.7rem;
+  }
+
+  .rent--van--button {
+    font-size: 1.6rem;
+  }
+}

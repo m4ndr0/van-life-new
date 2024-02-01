@@ -1,4 +1,5 @@
 import React from "react"
+import {Link} from "react-router-dom"
 
 export default function AboutContext() {
     return (
@@ -15,7 +16,7 @@ export default function AboutContext() {
                     <h3>Your destination is waiting. 
                         <span className="block">Your van is ready.</span>
                     </h3>
-                    <button className="explore--vans--btn">Explore our vans</button>
+                    <Link to="/Vans"><button className="explore--vans--btn">Explore our vans</button></Link>
                 </div>
             </div>
         </div>

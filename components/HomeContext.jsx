@@ -1,4 +1,6 @@
 import React from "react"
+import {Link} from "react-router-dom"
+
 
 export default function HomeContext() {
     return (
@@ -9,7 +11,7 @@ export default function HomeContext() {
                     <p>Add adventure to your life by joining the #vanlife movement. 
                         <span className="block">Rent the perfect van to make your perfect road trip.</span>
                     </p>
-                    <button className="find--your--van--btn">Find your van</button>
+                    <Link to="/Vans"><button className="find--your--van--btn">Find your van</button></Link>
                 </div>               
             </div>
         </main>
